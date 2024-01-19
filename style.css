@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee+Spice&family=Caveat:wght@700&family=Dancing+Script&family=Lemon&family=Poppins:ital,wght@0,500;0,700;1,800&family=Roboto:wght@400;500;700&family=Rubik+Doodle+Shadow&family=Rubik+Maps&family=Ubuntu:ital,wght@0,400;0,500;1,300&family=Varela+Round&display=swap');
+
+
+
+:root {
+    --main-bg: rgb(41, 44, 60);
+    --colours: rgb(188, 192, 204);
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    margin: 20px;
+    margin-bottom: 100px;
+    background: var(--main-bg);
+    color: var(--colours);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Bungee Spice', sans-serif;
+}
+
+#inputStuff {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#noteInput {
+    width: 70%;
+    padding: 20px;
+    background-color: rgb(17, 17, 27);
+    color: var(--colours);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-1 {
+    background-color: rgb(138, 173, 244);
+}
+
+.btn-2 {
+    background-color: rgb(231, 130, 132);
+}
+
+.btn-1,
+.btn-2 {
+    border: none;
+    border-radius: 7px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: bolder;
+}
+
+#addBtn {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.note {
+    border: 1px solid rgb(153, 209, 219);
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.note-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.deleteBtn {
+    cursor: pointer;
+    color: rgb(231, 130, 132);
+    font-weight: bold;
+    user-select: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    body {
+        margin: 10px;
+    }
+
+    #inputStuff {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn-1,
+    .btn-2 {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+}
